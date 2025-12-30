@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<title>Teacher Manager</title>
+</head>
+<body>
+<div class="container">
+<h2>Teacher Management System</h2>
+<a href="/add">+ Add Teacher</a>
+<table>
+<tr><th>ID</th><th>Name</th><th>Subject</th><th>Action</th></tr>
+<tr th:each="t:${teachers}">
+<td th:text="${t.id}"></td>
+<td th:text="${t.name}"></td>
+<td th:text="${t.subject}"></td>
+<td>
+<a th:href="@{/edit/{id}(id=${t.id})}">Edit</a>
+<a th:href="@{/delete/{id}(id=${t.id})}" class="delete">Delete</a>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<title>Edit Teacher</title>
+</head>
+<body>
+<div class="container">
+<h2>Edit Teacher</h2>
+<form action="/save" method="post" th:object="${teacher}">
+<input type="hidden" th:field="*{id}">
+<input th:field="*{name}">
+<input th:field="*{subject}">
+<button>Update</button>
+</form>
+</div>
+</body>
+</html>

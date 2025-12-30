@@ -1,0 +1,11 @@
+body{font-family:Segoe UI;background:#eef2ff}
+.container{width:70%;margin:40px auto;background:#fff;padding:25px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+h2{text-align:center;color:#1e3a8a}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th,td{padding:12px;text-align:center}
+th{background:#1e40af;color:#fff}
+tr:nth-child(even){background:#f1f5f9}
+a{padding:6px 10px;border-radius:6px;color:#fff;text-decoration:none;background:#2563eb}
+a.delete{background:#dc2626}
+button{background:#16a34a;color:#fff;padding:10px 15px;border:none;border-radius:6px;cursor:pointer}
+input{width:100%;padding:10px;margin-bottom:15px}

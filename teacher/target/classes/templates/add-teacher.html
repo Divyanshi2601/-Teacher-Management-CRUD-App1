@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<title>Add Teacher</title>
+</head>
+<body>
+<div class="container">
+<h2>Add Teacher</h2>
+<form action="/save" method="post" th:object="${teacher}">
+<input th:field="*{name}" placeholder="Teacher Name" required>
+<input th:field="*{subject}" placeholder="Subject" required>
+<button>Save</button>
+</form>
+</div>
+</body>
+</html>
